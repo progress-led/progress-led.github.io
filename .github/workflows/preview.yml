@@ -1,0 +1,25 @@
+# プルリクエスト（変更の提案）ごとに、公開前のビルド検証とプレビュー用ファイルの作成を行います。
+# ここが失敗している変更はマージしないでください。
+name: 変更チェック（公開前）
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: ビルドと検証
+        run: python3 scripts/build.py --site-url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+      - name: プレビュー用ファイルを保存
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-site
+          path: _site
+          include-hidden-files: true
+          retention-days: 14
