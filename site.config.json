@@ -1,14 +1,32 @@
 {
   "siteUrl": "",
   "ga4MeasurementId": "",
-  "formEndpoint": "",
+  "formEndpoint": "https://formspree.io/f/xeagjzqz",
   "googleSiteVerification": "",
   "sitemapPages": [
-    { "path": "/",               "priority": "1.0" },
-    { "path": "/factory.html",   "priority": "0.8" },
-    { "path": "/apartment.html", "priority": "0.8" },
-    { "path": "/store.html",     "priority": "0.8" },
-    { "path": "/office.html",    "priority": "0.8" },
-    { "path": "/privacy.html",   "priority": "0.3" }
+    {
+      "path": "/",
+      "priority": "1.0"
+    },
+    {
+      "path": "/factory.html",
+      "priority": "0.8"
+    },
+    {
+      "path": "/apartment.html",
+      "priority": "0.8"
+    },
+    {
+      "path": "/store.html",
+      "priority": "0.8"
+    },
+    {
+      "path": "/office.html",
+      "priority": "0.8"
+    },
+    {
+      "path": "/privacy.html",
+      "priority": "0.3"
+    }
   ]
 }
