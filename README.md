@@ -1,7 +1,7 @@
 # 株式会社プログレス｜法人向けLED照明工事サイト
 
-- 公開URL：https://ibu28kou20ten10miyu11-eng.github.io/progress-led/
-- リポジトリ：https://github.com/ibu28kou20ten10miyu11-eng/progress-led
+- 公開URL：https://progress-led.github.io/
+- リポジトリ：https://github.com/progress-led/progress-led.github.io
 - ページ：トップ／工場・倉庫／マンション共用部／店舗・商業施設／オフィス・ビル／プライバシーポリシー／送信完了
 
 ---
@@ -117,7 +117,7 @@ GitHub のプルリクエスト画面で：
 - [ ] **+ Add New → New Form**：名前「LED化LP問い合わせ」、通知先メールに自分のアドレス
 - [ ] 表示された **フォームURL（`https://formspree.io/f/xxxxxxxx`）** を Claude Code に伝え、`formEndpoint` に設定してもらう → マージ
 - [ ] Formspree のフォーム設定（Settings）：
-  - **Restrict to Domain**（表示される場合）に `ibu28kou20ten10miyu11-eng.github.io` を入力（他サイトからの悪用防止。プランによっては設定項目がありません）
+  - **Restrict to Domain**（表示される場合）に `progress-led.github.io` を入力（他サイトからの悪用防止。プランによっては設定項目がありません）
   - reCAPTCHA は **OFF のまま**（本サイトは画面遷移なしで送信するため。スパムは自動フィルタ＋隠し項目 `_gotcha` で防止）
 - [ ] 公開サイトからテスト送信 → 完了画面 → 通知メールが届くこと
 - 通知先メールの変更：Formspree → 対象フォーム → **Settings → Notifications/Emails**
@@ -145,7 +145,7 @@ GitHub のプルリクエスト画面で：
 - [ ] **URL検査** → トップ・各ページで「インデックス登録をリクエスト」
 - [ ] GA4 **管理 → Search Console のリンク** で連携
 
-> GitHub Pages のサブパス公開（`/progress-led/`）では `robots.txt` は検索エンジンに読まれませんが、サイトマップは上記の手動送信で問題なく登録されます。独自ドメインにすると robots.txt も有効になります。
+> GitHub Pages のサブパス公開（`/リポジトリ名/`）では `robots.txt` は検索エンジンに読まれませんが、サイトマップは上記の手動送信で問題なく登録されます。独自ドメインにすると robots.txt も有効になります。
 
 ### 4-6. 集客ダッシュボード（Looker Studio）
 
@@ -171,9 +171,9 @@ https://lookerstudio.google.com/ → 空のレポート → データ：Google �
 
 | 経路 | 案内するURL |
 |---|---|
-| チラシ | `https://ibu28kou20ten10miyu11-eng.github.io/progress-led/?utm_source=flyer&utm_medium=print&utm_campaign=2026-11_flyer` |
-| 紹介 | `https://ibu28kou20ten10miyu11-eng.github.io/progress-led/?utm_source=shokai&utm_medium=introduction&utm_campaign=shokai` |
-| テレアポ | `https://ibu28kou20ten10miyu11-eng.github.io/progress-led/?utm_source=teleapo&utm_medium=sales_call&utm_campaign=2026-11_teleapo` |
+| チラシ | `https://progress-led.github.io/?utm_source=flyer&utm_medium=print&utm_campaign=2026-11_flyer` |
+| 紹介 | `https://progress-led.github.io/?utm_source=shokai&utm_medium=introduction&utm_campaign=shokai` |
+| テレアポ | `https://progress-led.github.io/?utm_source=teleapo&utm_medium=sales_call&utm_campaign=2026-11_teleapo` |
 | 自然検索 | 不要（Google・Yahoo!等から自動判定） |
 
 - 施設別ページに直接案内：`.../factory.html?utm_source=flyer&...`
@@ -214,15 +214,15 @@ https://lookerstudio.google.com/ → 空のレポート → データ：Google �
 4. リポジトリを取得
    ```bash
    cd ~/Documents
-   gh repo clone ibu28kou20ten10miyu11-eng/progress-led
-   cd progress-led
+   gh repo clone progress-led/progress-led.github.io
+   cd progress-led.github.io
    claude
    ```
 
 ### 2回目以降
 
 ```bash
-cd ~/Documents/progress-led
+cd ~/Documents/progress-led.github.io
 git checkout main && git pull
 claude
 ```
